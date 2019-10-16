@@ -1,0 +1,421 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #f1f3f4;
+	font-family: sans-serif;
+}
+.headwrapper
+{
+	position: fixed;
+}
+.top-nav-bar
+{
+	overflow: hidden;
+	height: 57px;
+	top: 0;
+	position: sticky;
+	background: #fff;
+	margin-bottom: 20px;
+    transition: top 0.3s;
+	div {border-color: #0000ff;}
+
+
+}
+.logo
+{
+	height: 90%;
+	width: 185;
+	margin: 10px 10px;
+}
+.form-control
+{
+	margin-top: 9px;
+	margin-left: 30px;
+	border: 1px solid orange !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	box-shadow: none;
+}
+.input-group-text
+{
+	background: orange;
+	border: 1px solid orange !important;
+	margin: 8.5px 10px 3px 0 !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	cursor: pointer;
+}
+.search-box
+{
+	display: inline-flex;
+	width: 50%;
+	height: 90%;
+}
+.fa-search
+{
+	color: #fff;
+}
+.menu-bar
+{
+	width: 50%;
+	height: 60%;
+	float: right;
+}
+.menu-bar ul li
+{
+	border-left: 1px solid #fff;
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	background-color: orange;
+	cursor: pointer;
+}
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+.fa-shopping-basket
+{
+	margin-right: 5px;
+}
+@media only screen and (max-width: 980px)
+{
+	.top-nav-bar
+	{
+		height: 118px;
+		border-bottom: 0;
+	}
+	.search-box
+	{
+		width: 100%;
+	}
+	.menu-bar
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.menu-bar ul
+	{
+		margin: 10px 0;
+		width: 100%;
+	}
+	.menu-bar ul li 
+	{
+		height: 57px;
+       	width: 100%;
+	}
+}
+.side-menu
+{
+	margin-top: 60%
+	height: 200%;
+	width: 15%;
+	font-size: 14px;
+	float: left;
+	z-index: 2;
+	background-color: #ddd;
+
+}
+.side-menu
+{
+	margin-left: 10px;
+
+}
+.side-menu ul li
+{
+list-style-type: none;
+font-weight: bold;
+margin-top: 10px;
+cursor: pointer;
+}
+.side-menu ul li:hover
+{
+	color: orange;
+}
+.side-menu ul li ul
+{
+	display: none;
+	z-index: 10;
+	top: 77px;
+}
+.side-menu ul li:hover ul
+{
+	display: block;
+	height: 400px;
+	margin-left: 14%
+	padding: 0 100px 10px 10px;
+	position: fixed;
+	background: #ececec;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.fa fa-angle-right 
+{
+	margin-top: 4px;
+	margin-right: 8px;
+	float: right;
+}
+#menu-btn #close-btn
+{
+	font-size: 30px;
+	margin: 10px;
+	color: orange;
+	display: none;
+}
+@media only screen and (max-width: 980px)
+{
+	.side-menu
+	{
+		width: 34%;
+		z-index: 20;
+		top: 133px;
+		position: fixed;
+		font-size: 12px;
+		display: none;
+	}
+	.side-menu ul li ul
+	{
+     top: 133px;
+	}
+	.side-menu ul li:hover ul
+	{
+		margin-left: 31%;
+	}
+	#menu-btn
+	{
+		display: block;
+	}
+}
+
+</*-------slideshow container---------*/>
+.slideshow-container {
+	margin-top: 30px;
+	height: 60px
+	width: 85%;
+	margin-left: 40%;
+	padding: 0 10px;
+}
+
+.mySlides {
+	margin-top: 30px;
+	margin-left: 220px;
+	width: 1200px;
+	height: 680px;
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*---------------trending food items-----------------*/
+.featuredcategories
+{
+	margin: 30px 0;
+}
+.featuredcategories img
+{
+	width: 75%;
+	padding: 20px 0;
+	transition: 1s;
+	cursor: pointer;
+}
+.featuredcategories img:hover
+{
+	transform: scale(1.1);
+}
+/*---------cafes css---------*/
+.titlebox 
+{
+	background: orange;
+	color: #fff;
+	width: 200px;
+	padding: 4px 10px;
+	height: 40px;
+	margin-bottom: 30px;
+	display: flex;
+}
+.titlebox h2
+{
+	font-size: 24px;
+}
+.titlebox::after
+{
+	content: '';
+	border-top: 40px solid orange;
+	border-right: 50px solid transparent;
+	position: absolute;
+	display: flex;
+	margin-top: -4px;
+	margin-left: 170px;
+}
+.cafes
+{
+margin: 30px 0;
+
+}
+.cafes img
+{
+    width: 75%;
+	padding: 20px 0;
+	transition: 1s;
+	cursor: pointer;	
+}
+.cafes img:hover
+{
+	transform: scale(1.1);
+}
+
+</*-----global cuisine--------*/>
+.globalcuisine
+{
+	margin: 30px 0;
+}
+.globalcuisine img
+{
+	width: 75%;
+	padding: 20px 0;
+	transition: 1s;
+	cursor: pointer;	
+}
+.globalcuisine img:hover
+{
+	transform: scale(1.1);
+}
+
+</*--------website features css-----------*/>
+.websitefeatures
+{
+	margin-top: 60px;
+	margin: 60px 0;
+}
+.websitefeatures img
+{
+	margin-top: 100px;
+	width: 50%;
+}
+.feature-text
+{
+	margin-top: 10px;
+	float: right;
+	width: 80%;
+	padding-left:  20px;
+
+}
+.feature-box
+{
+	padding-top: 20px;
+}
+
+/*-----footer--------*/
+.footer
+{
+	margin-top: 50px;
+	background: #000;
+	color: #fff;
+
+}
+.footer h1
+{
+	font-size: 15px;
+	margin: 25px 0;
+}
+.footer p
+{
+	font-size: 12px;
+}
